@@ -5,7 +5,7 @@ class Carriage < ApplicationRecord
 
   scope :economy, -> { where(type: 'EconomyCarriage') }
   scope :coupe, -> { where(type: 'CoupeCarriage') }
-  scope :ordered -> { order(:number) }
+  scope :ordered, -> { order(:number) }
 
 
 end
